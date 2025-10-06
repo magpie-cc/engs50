@@ -1,0 +1,42 @@
+things to test for in queue.c
+
+method # of tests
+* notes
+
+qopen 1
+* just open. make sure the queue pointer isn't null
+
+qclose 2
+* qclose on an empty queue. make sure the queue pointer is null
+* qclose on a non-empty queue. just to make sure no memory leaks happen
+
+qput 2
+* tbh i have no idea how to make this testable so good luck here
+* qput into an empty queue
+* qput into a non-empty queue 
+
+qget 2
+* qget on an empty queue. simple, check if it returns something (here "something" will be none).
+* qget on a non-empty queue. also have to make sure the pointer changed. maybe 2 gets in a row?
+
+qapply 2
+* qapply on a nonempty queue. sum up a queue of numbers that you just changed.
+* qapply on an empty queue. just make sure that sum is 0
+
+qsearch 3
+* qsearch on an empty list. returns null.
+* qsearch on a queue that contains object, returns that object
+* qsearch on a queue that doesn't contain object, returns null
+
+qremove 4
+* empty queue
+* at front of queue
+* at back of queue
+* at middle of queue
+
+qconcat 3
+* two empty queues
+* one empty queue, one nonempty queue
+* two nonempty queues
+
++ whatever else yall think of.

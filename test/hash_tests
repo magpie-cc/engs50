@@ -1,0 +1,29 @@
+hash tests
+
+hopen
+* hopen a hash table.
+
+
+hclose
+* hclose on an empty hashtable
+* hclose on a non-empty hashtable
+
+hput
+* hput on an empty hashtable
+* hput on a nonempty hashtable, no collisions
+* hput on a nonempty hashtable, with a collision
+* hput enough so that the table has to grow
+
+happly
+* on an empty hash table.
+* on a non-empty hashtable, with some collisions
+
+hsearch
+* on an empty hash table
+* on a nonempty hashtable, hashtable contains element
+* """"", hashtable doesn't contain it
+
+hremove
+* on an empty hash table
+* nonempty hashtable, contains it
+* on nonempty hashtable, which doesn't contain it. 

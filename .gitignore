@@ -10,3 +10,5 @@
 
 # debugging symbols
 *.dSYM
+
+*/.backup/
